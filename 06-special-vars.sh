@@ -14,3 +14,4 @@ echo "Home Directory: $HOME"
 echo "PID of the current script: $$"
 sleep 5 &
 echo "PID of the background command running just now: $!"
+wait $!
