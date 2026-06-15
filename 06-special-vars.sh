@@ -6,3 +6,5 @@
 
 echo "All variables passes to script: $@"
 echo "number of variables passed: $#"
+echo "first variable: $1"
+echo "script name: $0"
