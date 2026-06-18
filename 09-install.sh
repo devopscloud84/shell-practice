@@ -10,7 +10,7 @@ if [ $USERID -ne 0 ]; then
 fi
 
 echo "Insatlling MySQL"
-dnf install mysqabcd -y
+dnf install mysql -y
 
 if [ $? -ne 0 ]; then
     echo "Installing MySQL is ...Failed"
