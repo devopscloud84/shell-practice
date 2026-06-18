@@ -9,4 +9,4 @@ if [ $USERID -ne 0 ]; then
     exit 1
 fi
 
-echo "Im continuing..."
+# echo "Im continuing..."
