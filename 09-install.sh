@@ -13,7 +13,7 @@ echo "Insatlling MySQL"
 dnf install mysqabcd -y
 
 if [ $? -ne 0 ]; then
-    echo "Installing MySQL is ...Falied"
+    echo "Installing MySQL is ...Failed"
     exit 1
 else
     echo "Installing MySQL is ...Success"
