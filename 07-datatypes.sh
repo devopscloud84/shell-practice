@@ -10,3 +10,6 @@ echo "Sum is :$Sum"
 
 MOVIES=("RRR" "VARANASI" "PUSHPA") # index is always start from 0
 echo "Movies are : ${MOVIES[@]}"
+echo "First Movie is : ${MOVIES[0]}"
+echo "Second Movie is : ${MOVIE[1]}"
+echo "Third Movis is : ${MOVIE[2]}"
