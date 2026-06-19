@@ -23,7 +23,7 @@ VALIDATE ()
     
 }
 
-dnf list installed mysql
+dnf list installed MySQL
 
 if [ $? -eq 0 ]; then
     echo "MySQL is already installed...Skipping"
