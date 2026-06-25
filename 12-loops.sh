@@ -30,6 +30,13 @@ for package in $a
 
 do
  echo "installing $package"
+ dnf list installed $package 
+ if [$? - ne 0]; then 
+  dnf install $package -y &>> $LOGS_FILE
+  VALIDATE $? "installing $package" $?
+  else
+    echo "$package already installed..skipping"
+ fi 
 done 
 
 
