@@ -4,6 +4,7 @@ USERID=$(id -u)
 ##LOGS_DIR=home/ec2-user/shell-logs
 LOGS_DIR=var/logs/shell-logs
 LOGS_FILE="$LOGS_DIR/$0.log"
+TIMESTAMP=$(date "+%Y-%m-%d %H:%M:%S")
 
 # check the root access or not
 
@@ -18,10 +19,10 @@ fi
 VALIDATE ()
 {
      if [ $2 -ne 0 ]; then
-    echo "Installing $1 is ...Failed" | 
+    echo "$TIMESTAMP [ERROR] Installing $1 is ...Failed" | tee -a $LOGS_FILE
     exit 1
     else
-    echo "Installing $1 is ...Success" | 
+    echo "$TIMESTAMP [INFO] Installing $1 is ...Success" | tee -a $LOGS_FILE
     fi
     
 }
