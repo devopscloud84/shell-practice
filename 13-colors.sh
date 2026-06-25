@@ -31,7 +31,7 @@ VALIDATE ()
     
 }
 
-for package in $a
+for package in $@
 
 do
  echo "installing $package"
